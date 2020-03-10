@@ -1,0 +1,92 @@
+body{
+    padding-bottom: 20px;
+    padding-right: 0;
+    background-color: antiquewhite;
+}
+.navbar-wrapper{
+    position: absolute;
+/*    An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: A "positioned" element is one whose position is anything except static.*/
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.bg-dark{
+    background-color: cadetblue!important;
+}
+.carousel{
+    margin-top:0;
+    margin-bottom: 50px;
+}
+.carousel .carousel-item{
+    height: 800px;
+}
+.carousel-inner > .carousel-item > img{/* carousel ka container*/
+    position: absolute;
+    height: 800px;
+    min-width: 100%;
+}
+.navbar-wrapper > .container{
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+
+.navbar-wrapper .navbar .container{
+    width: auto;
+/*    for small devices*/
+}
+.navbar-wrapper .navbar{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.carousel-caption{
+    width: auto;
+}
+.team .col-lg-4{
+    text-align: center;
+    width: auto;
+    padding: 40px 0;
+}
+.team h1{
+    color: cadetblue;
+}
+.divider{
+    margin: 40px 0;
+}
+
+.content{
+    text-align: center;
+}
+.content img{
+    float: right;
+    margin-top: 25px;
+}
+.content2{
+    text-align: center;
+}
+.content2 img{
+    float: left;
+    margin-top: 25px;
+}
+@media(max-width:768px){
+    .carousel-inner > .carousel-item{
+        height:400px;
+        max-width:auto;
+    }
+    .carousel-inner > .carousel-item> img{
+        margin-top:55px;
+        height:400px;
+        max-width:400px;
+    }
+    .carousel-caption h3{
+        width: auto;
+    }
+  
+}
